@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Your Workspace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #4a90e2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1:last-of-type {
+            font-size: 2em;
+            color: #7d3c98;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to your workspace</h1>
+<h1 th:object="${det}" th:text="*{username}"></h1>
+</body>
+</html>

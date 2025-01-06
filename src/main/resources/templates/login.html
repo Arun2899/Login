@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        <style>*{
+        margin: 0;
+        padding: 0;
+    }
+
+    .Main{
+        height: 800px;
+        width: 100%;
+        background-color: blue;
+
+    }
+    #one{
+        position: relative;
+        right: -550px;
+        bottom: -250px;
+        padding: 20px;
+        background-color: white;
+        height: 300px;
+        width: 350px;
+        font-size: small;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+         input{
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<div class="Main">
+    <div id="one">
+        <h1>Login</h1><br>
+        <form th:object="${details}" th:action="@{/add}" method="post">
+
+        <input type="text" placeholder="Username" size="40" style="padding: 10px;" th:field="*{username}"><br><br>
+            <input type="password" placeholder="Password" size="40" style="padding: 10px;" th:field="*{password}"><br><br>
+
+            <input type="submit" value="Login" size="40" style="padding: 10px; width: 325px; background-color: blue; color: white;"><br><br>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
